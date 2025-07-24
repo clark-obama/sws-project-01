@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 입력칸에 마우스가 위치할 때 손가락(포인터) 커서 적용 */
+input:focus, input:hover, textarea:focus, textarea:hover, .ant-input:focus, .ant-input:hover, .ant-input-number-input:focus, .ant-input-number-input:hover, .ant-select-selector:focus, .ant-select-selector:hover {
+  cursor: pointer;
+}
+
+/* 입력칸에 마우스 올릴 때 배경색 유지 및 손가락 커서 */
+.ant-input:hover, .ant-input:focus,
+.ant-input-number-input:hover, .ant-input-number-input:focus,
+.ant-select-selector:hover, .ant-select-selector:focus,
+.ant-input-affix-wrapper:hover, .ant-input-affix-wrapper:focus {
+  background: #fff !important;
+  cursor: pointer !important;
+  font-family: 'Noto Sans KR', 'NanumSquare', sans-serif !important;
+}
+
+/* 드롭다운/입력칸 포커스 시 영어로 바뀌는 현상 방지 */
+.ant-select-dropdown, .ant-input, .ant-input-number-input {
+  font-family: 'Noto Sans KR', 'NanumSquare', sans-serif !important;
+}
